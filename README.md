@@ -1,2 +1,3 @@
 # Exercicio---Contas
-Exercício de construção de contas da Aula 3
+Implementação de Conta, Conta Corrente e Conta Poupança - Aula 3 LP1A3//
+Andrey Camargo Lacerda - SP3013049
