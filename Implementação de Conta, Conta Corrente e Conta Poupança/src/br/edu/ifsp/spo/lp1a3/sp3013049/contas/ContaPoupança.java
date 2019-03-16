@@ -20,4 +20,12 @@ public class ContaPoupança extends Conta{
 		double valor = this.getSaldo() * getTaxaRendimento();
 		this.depositar(valor);
 	}
+	
+	@Override
+	public String toString() { 
+	    return "Titular: '" + this.getTitular() 
+	    + "', Número da Conta: '" + this.getNúmeroConta() 
+	    + "', Saldo: '" + this.getSaldo() 
+	    + "', Taxa de Rendimento: '" + this.getTaxaRendimento() + "'";
+	}	
 }

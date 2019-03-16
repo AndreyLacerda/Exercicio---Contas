@@ -40,4 +40,25 @@ public class Conta {
 		this.saldo = this.saldo - valor;
 		return this.getSaldo();
 	}
+	
+	@Override
+	public String toString() { 
+	    return "Titular: '" + this.titular + "', Número da Conta: '" + this.númeroConta + "', Saldo: '" + this.saldo + "'";
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		boolean resultado = false;
+		
+		if(obj.getClass() == this.getClass()) {
+			
+			Conta other = (Conta)obj;
+			
+			resultado = this.getNúmeroConta() == other.getNúmeroConta();
+			resultado = resultado && this.getTitular().equals(other.getTitular());
+			resultado = resultado && this.getSaldo() == other.getSaldo();
+		}
+		return resultado;
+	}
 }
